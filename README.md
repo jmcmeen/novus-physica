@@ -7,9 +7,6 @@ Project Goals
   -- Build code examples to demonstrate Open GL, Open TK, and physics engines
 
 Links
-Ian Millington Github: https://github.com/idmillington/cyclone-physics
-
-
-  
-  
-  
+  -- Ian Millington Github: https://github.com/idmillington/cyclone-physics
+  -- OpenTK Examples: https://github.com/opentk/LearnOpenTK
+  -- OpenTK Tutorials: https://opentk.net/learn/index.html
