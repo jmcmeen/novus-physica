@@ -29,7 +29,7 @@ namespace _01_Gravity
         // We need the point lights' positions to draw the lamps and to get light the materials properly
         private readonly Vector3[] _pointLightPositions =
         {
-            new Vector3(0.2f, 0.2f, 0.2f),
+            new Vector3(5.0f, 0.2f, 0.2f),
             new Vector3(2.3f, -3.3f, -4.0f),
             new Vector3(-4.0f, 2.0f, -12.0f),
             new Vector3(0.0f, 0.0f, -3.0f)
@@ -164,13 +164,13 @@ namespace _01_Gravity
 
 
             // Directional light
-            _lightingShader.SetVector3("dirLight.direction", new Vector3(-0.2f, -1.0f, -0.3f));
-            _lightingShader.SetVector3("dirLight.ambient", new Vector3(0.05f, 0.05f, 0.05f));
-            _lightingShader.SetVector3("dirLight.diffuse", new Vector3(0.4f, 0.4f, 0.4f));
-            _lightingShader.SetVector3("dirLight.specular", new Vector3(0.5f, 0.5f, 0.5f));
+            //_lightingShader.SetVector3("dirLight.direction", new Vector3(-0.2f, -1.0f, -0.3f));
+            //_lightingShader.SetVector3("dirLight.ambient", new Vector3(0.05f, 0.05f, 0.05f));
+            //_lightingShader.SetVector3("dirLight.diffuse", new Vector3(0.4f, 0.4f, 0.4f));
+            //_lightingShader.SetVector3("dirLight.specular", new Vector3(0.5f, 0.5f, 0.5f));
 
             DrawPointLights();
-            DrawSpotLight();
+            //DrawSpotLight();
             DrawCubes();
 
             ///
@@ -220,7 +220,7 @@ namespace _01_Gravity
             // Spot light
             _lightingShader.SetVector3("spotLight.position", _camera.Position);
             _lightingShader.SetVector3("spotLight.direction", _camera.Front);
-            _lightingShader.SetVector3("spotLight.ambient", new Vector3(0.0f, 0.0f, 0.0f));
+            _lightingShader.SetVector3("spotLight.ambient", new Vector3(0.7f, 0.7f, 0.7f));
             _lightingShader.SetVector3("spotLight.diffuse", new Vector3(1.0f, 1.0f, 1.0f));
             _lightingShader.SetVector3("spotLight.specular", new Vector3(1.0f, 1.0f, 1.0f));
             _lightingShader.SetFloat("spotLight.constant", 1.0f);
